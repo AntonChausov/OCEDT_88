@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ba223af-9418-4282-b570-003932f92cae">
+  <producedTypes>
+    <selectionType typeId="2511208c-b7d0-4aaf-ba16-15f5b7a50d12" valueTypeId="0c77b237-b104-45d7-a597-efe02f9eff43"/>
+    <listType typeId="4a68f9a1-4385-4e3f-b010-a4270f76c2d2" valueTypeId="c00b4962-974c-4a42-9020-f01a067b4c39"/>
+    <managerType typeId="3e4693f3-abfc-4a5d-84fb-549114b93610" valueTypeId="3a6b5822-fa03-49ad-af6c-7f666c53541d"/>
+    <recordSetType typeId="75f002cb-a816-4e1c-baf7-c59c8f66f0cd" valueTypeId="922eb26e-e999-43fc-9599-5d649e40d476"/>
+    <recordKeyType typeId="7fde05fa-c5cc-4990-9b4e-cb9410411fff" valueTypeId="39370233-d0e8-496f-8b33-b0763837de83"/>
+    <recordType typeId="19460a00-85b0-4549-9b11-4b7b2fe16601" valueTypeId="b629283b-e13e-498a-aa5d-239c6a06be88"/>
+  </producedTypes>
+  <name>Товары</name>
+  <synonym>
+    <key>ru</key>
+    <value>Товары</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="1dc8c0e4-85cd-4812-b6c8-26a7112103b2">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Количественный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="d5971453-3a17-4c0d-95c3-1a4729cbaa87">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Денежный</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1bee409c-4419-421c-b056-bf6880b9cd27">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

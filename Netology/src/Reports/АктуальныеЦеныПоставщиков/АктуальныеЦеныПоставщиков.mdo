@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cac2d8fc-b632-44d8-8e89-89ccdafffc1d">
+  <producedTypes>
+    <objectType typeId="583bd225-85ae-4ae1-b561-8fbb7981aa01" valueTypeId="bea65bd3-dade-4183-a964-dd55854bb946"/>
+    <managerType typeId="d7e99c45-7f8f-4a6c-bf6c-1e724274a94c" valueTypeId="d7bd0e33-1dfc-42c2-85eb-62a83b9a6501"/>
+  </producedTypes>
+  <name>АктуальныеЦеныПоставщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуальные цены поставщиков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АктуальныеЦеныПоставщиков.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="f6ad3370-ff87-4040-ae2c-1c095cb8d31e">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

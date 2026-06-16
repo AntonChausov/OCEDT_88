@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f25f050f-fcb1-4f64-9a03-ab44503c60f3">
+  <producedTypes>
+    <objectType typeId="e1f4f920-74a6-4208-b748-359e5d0f212f" valueTypeId="b2a20828-d4e3-44e0-ba1a-c13d4ddb23bd"/>
+    <refType typeId="129c7202-a59d-41c6-a6e7-6e2da5dde331" valueTypeId="36ccce52-d8bf-41a5-a52b-38450c47c19a"/>
+    <selectionType typeId="601a243d-9c4b-4f9a-aa91-795c73597484" valueTypeId="c2a19fe6-1558-4f01-a97b-d96031fad1cf"/>
+    <listType typeId="8a5b1a5c-bfe4-4af4-8642-b82959c76702" valueTypeId="f64de0a9-de0b-42e2-91e3-df8b7c058310"/>
+    <managerType typeId="63f9a6ce-83ac-4ca3-98dd-db3f64ebafb8" valueTypeId="e0d1a8de-fa40-4bae-a41a-29fa5834aa27"/>
+  </producedTypes>
+  <name>ВидыКонтактнойИнформации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды контактной информации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ВидыКонтактнойИнформации.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Контактная информация</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Виды контактной информации</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="abfafb9a-1eff-46aa-b7bb-356ac87d000e">
+      <name>EMailКонтрагента</name>
+      <description>Email контрагента</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="a43261fd-b803-4687-9206-f3922113ecb4">
+      <name>ПочтовыйАдресКонтрагента</name>
+      <description>Почт адрес контрагента</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="e5b7de9a-6cd1-4bf5-86df-cd053ea39e8a">
+      <name>ТелефонКонтрагента</name>
+      <description>Телефон контрагента</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="e00f0c59-ceff-4beb-ba34-105bb9ab08bf">
+      <name>ФактическийАдресКонтрагента</name>
+      <description>Фактич адрес контрагента</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="015cab74-d640-4e31-ba37-4a5c93b4da8c">
+      <name>ЮридическийАдресКонтрагента</name>
+      <description>Юр адрес контрагента</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="d0f65c0a-e9dd-4a57-b874-60170b9d07e9">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыКонтактнойИнформации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

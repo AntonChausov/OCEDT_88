@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="98353041-2871-4591-b3b3-24386079722d">
+  <name>Отчетность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчетность</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ПодсистемаОтчетность</picture>
+  </picture>
+  <content>Report.ИсторияЦенПродажи</content>
+  <content>Report.АктуальныеЦеныПоставщиков</content>
+  <content>Report.ОстаткиТоваров</content>
+  <content>DataProcessor.РасчетПремий</content>
+  <content>CommonPicture.ПодсистемаОтчетность</content>
+  <content>DataProcessor.РаботаСBase64</content>
+  <content>DataProcessor.РаботаСПотоками</content>
+</mdclass:Subsystem>

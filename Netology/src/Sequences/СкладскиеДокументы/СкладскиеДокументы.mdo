@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a728ce2-916f-4ac7-8043-b5d892dcd0ae">
+  <producedTypes>
+    <recordType typeId="3a8ca231-e878-40b8-ba18-41add767d0b1" valueTypeId="a77ccb6e-c8d2-4e08-9a1a-cdb9197453af"/>
+    <managerType typeId="8aab845f-f9cd-448c-a32c-578d3d3a682f" valueTypeId="01e38671-ba7e-44d6-9e08-73df40a05f71"/>
+    <recordSetType typeId="84c3642b-9fdb-421e-b284-6ac0b0bf0af0" valueTypeId="698b76ce-332f-4547-b82e-0fb978240ea7"/>
+  </producedTypes>
+  <name>СкладскиеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Складские документы</value>
+  </synonym>
+  <documents>Document.ПоступлениеТоваровИУслуг</documents>
+  <documents>Document.РеализацияТоваровИУслуг</documents>
+  <registerRecords>AccumulationRegister.Товары</registerRecords>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Sequence>

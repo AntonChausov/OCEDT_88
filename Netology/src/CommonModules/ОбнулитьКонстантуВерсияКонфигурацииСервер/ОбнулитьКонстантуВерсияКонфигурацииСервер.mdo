@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="093fbf93-ca4a-4ea0-b285-afb524547e47">
+  <name>ОбнулитьКонстантуВерсияКонфигурацииСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обнулить константу версия конфигурации сервер</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

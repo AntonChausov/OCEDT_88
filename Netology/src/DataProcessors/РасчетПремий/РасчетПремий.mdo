@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ac5ff68-b0d1-4d16-8107-acaf393904e2">
+  <producedTypes>
+    <objectType typeId="4181e61b-9c72-4c57-ac3c-0f8d51668351" valueTypeId="172e2075-849e-421f-a8ce-ca4132fbae92"/>
+    <managerType typeId="da496963-f0d0-46c5-a7d7-6afd92f96c78" valueTypeId="5ebf3127-088c-4582-aea0-9167cba6360e"/>
+  </producedTypes>
+  <name>РасчетПремий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет премий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РасчетПремий.Form.Форма</defaultForm>
+  <attributes uuid="c4885494-39cb-4a49-909a-6705a7ffbaf2">
+    <name>ПроцентНаУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент на услуги</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>100</value>
+    </maxValue>
+  </attributes>
+  <attributes uuid="ecad09bd-0834-46df-bd9d-8a64fdc9488d">
+    <name>ПроцентНаТовары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент на товары</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>100</value>
+    </maxValue>
+  </attributes>
+  <attributes uuid="ebf52a9c-4407-4c06-a99c-fe0006b9f80f">
+    <name>ДатаСКоторойСчитать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f05758ba-59a1-4f99-8a1a-814ced73b249">
+    <name>ДатаДоКоторойСчитать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="620f6616-9afb-46b1-a097-547baeb0f093">
+    <producedTypes>
+      <objectType typeId="895e9222-df0c-4bcb-9dc9-75138b419577" valueTypeId="81289a13-6588-4c40-8124-e94ba049a838"/>
+      <rowType typeId="12eb7e60-2861-4635-b369-a74a8c1eadb4" valueTypeId="93bed7a7-f3ee-4da5-9552-b58ac7e2c171"/>
+    </producedTypes>
+    <name>ТаблицаПремий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица премий</value>
+    </synonym>
+    <attributes uuid="56f9a5e2-5dc6-4118-9be8-31067a1b2535">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ca38efdf-b03c-4196-a42b-924b262d3620">
+      <name>ПродажиТоваров</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продажи товаров</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Денежный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c0cc397f-8325-4612-9b95-48335049daf0">
+      <name>ПремияЗаПродажуТоваров</name>
+      <synonym>
+        <key>ru</key>
+        <value>Премия за продажу товаров</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Денежный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3d1bd2f2-acc0-407c-bb84-bd14da59a10b">
+      <name>ПродажиУслуг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Продажи услуг</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Денежный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d93a6671-307a-4359-91d1-27267901ffb4">
+      <name>ПремияЗаПродажиУслуг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Премия за продажи услуг</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Денежный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2630f768-bb34-4a3c-9c3c-02201c0a61da">
+      <name>Премия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Премия</value>
+      </synonym>
+      <type>
+        <types>DefinedType.Денежный</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="479c3074-a904-4457-a4c8-9b63e388a20e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

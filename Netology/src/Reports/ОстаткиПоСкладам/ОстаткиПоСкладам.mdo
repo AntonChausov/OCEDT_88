@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ae605af-7859-423a-877a-8ec51b427246">
+  <producedTypes>
+    <objectType typeId="44a114d2-3bbc-4d17-8650-37dbe20dfc41" valueTypeId="2a4f8cb4-3a15-4149-b21b-8f13a1289518"/>
+    <managerType typeId="803f4706-23f0-4c3e-806d-de2cf32f7804" valueTypeId="f40fc1e4-1113-4597-abe3-d93991581aaf"/>
+  </producedTypes>
+  <name>ОстаткиПоСкладам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки по складам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ОстаткиПоСкладам.Form.ФормаОтчета</defaultForm>
+  <forms uuid="2a72ac68-da25-414c-915a-be2e3f8c33ab">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Report>
