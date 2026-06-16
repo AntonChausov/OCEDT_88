@@ -101,6 +101,7 @@
   <documents>Document.ПоступлениеТоваровИУслуг</documents>
   <documents>Document.РеализацияТоваровИУслуг</documents>
   <documents>Document.УстановкаЦен</documents>
+  <documents>Document.ПриемНаРаботу</documents>
   <sequences>Sequence.СкладскиеДокументы</sequences>
   <documentJournals>DocumentJournal.ДвижениеТоваров</documentJournals>
   <enums>Enum.ЮридическоеФизическоеЛицо</enums>
